@@ -1,19 +1,8 @@
 {
   "name": "oats-test",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/bali182/oats-test.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/bali182/oats-test/issues"
-  },
-  "homepage": "https://github.com/bali182/oats-test#readme"
+  "scripts": {},
+  "devDependencies": {
+    "typescript": "4.4.2",
+    "ts-node": "10.2.1"
+  }
 }
