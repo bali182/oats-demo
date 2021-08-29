@@ -17,6 +17,12 @@
       },
       "Book": {
         "type": "object",
+        "required": [
+          "title",
+          "author",
+          "bookType",
+          "price"
+        ],
         "properties": {
           "id": {
             "type": "string"
@@ -38,22 +44,24 @@
           }
         }
       },
-      "ApiErrorType": {
+      "AppErrorCode": {
         "type": "string",
         "enum": [
-          "paperback",
-          "digital",
-          "audio"
+          "generic"
         ]
       },
       "AppError": {
         "type": "object",
+        "required": [
+          "message",
+          "code"
+        ],
         "properties": {
           "message": {
             "type": "string"
           },
           "code": {
-            "$ref": "#/components/schemas/ApiErrorType"
+            "$ref": "#/components/schemas/AppErrorCode"
           }
         }
       }
@@ -85,7 +93,7 @@
         "content": {
           "application/json": {
             "schema": {
-              "$ref": "#/components/schemas/Book"
+              "$ref": "#/components/schemas/AppError"
             }
           }
         }
